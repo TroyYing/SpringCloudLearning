@@ -1,8 +1,8 @@
 FROM maven:3.5.2-jdk-8-alpine
 
 WORKDIR /opt
-COPY ./.mvn /opt/
-COPY ./src /opt/
+ADD ./.mvn /opt/
+ADD ./src /opt/
 COPY ./.gitignore /opt/
 COPY ./mvnw /opt/
 COPY ./mvnw.cmd /opt/
